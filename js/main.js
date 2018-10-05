@@ -25,7 +25,7 @@ var frl = document.getElementById("fr-l");
 
 frl.style.width = frr.offsetWidth + "px";
 frl.style.height = (parseInt(frl.style.width) / 8.7) * 5.6 + "px";
-
+frr.style.height=frl.style.height;
 window.onresize = function() {
   //主图案自适应
 
@@ -51,6 +51,7 @@ window.onresize = function() {
 
   frl.style.width = frr.offsetWidth + "px";
   frl.style.height = (parseInt(frl.style.width) / 8.7) * 5.6 + "px";
+  frr.style.height=frl.style.height;
 };
 
 // 阅读更多效果

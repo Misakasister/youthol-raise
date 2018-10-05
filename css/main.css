@@ -227,29 +227,29 @@ h3 {
 
 /* 旋转木马 */
 .index{
-    height: 350px;
+    height: 450px;
 }
 
 header {
     width: 100%;
     background-size: 100% 100%;
-    height: 350px;
+    height: 470px;
 }
 .swiper-wrapper{
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 header .swiper-container {
     width: 95%;
     padding-top: 0.5rem;
-    height: 350px;
+    height: 470px;
 }
 
 header .swiper-slide {
     background-position: center;
     background-size: 130% 120%;
     width: 60%;
-    height: 350px;
+    height: 470px;
 }
 .swiper-slide p{
     text-align: center;
@@ -258,7 +258,7 @@ header .swiper-slide {
 header .swiper-slide iframe {
     display: block;
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 
 header .swiper-button-next,
@@ -270,13 +270,13 @@ header .swiper-button-next,
 
 header .swiper-button-next {
     width: 20%;
-    height: 300px;
+    height: 400px;
     background: url("../img/right.png") no-repeat 100% 2.5rem;
 }
 
 header .swiper-button-prev {
     width: 20%;
-    height: 300px;
+    height: 400px;
     background: url("../img/left.png") no-repeat 0 2.5rem;
 }
 
@@ -304,3 +304,16 @@ header .swiper-button-prev {
 .flex p{
     margin: 0px;
 } 
+
+.wf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.xx{
+    position: absolute;
+    right: 0px;
+    transform: translate(50%,-50%);
+}
