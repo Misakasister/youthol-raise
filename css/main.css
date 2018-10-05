@@ -317,3 +317,10 @@ header .swiper-button-prev {
     right: 0px;
     transform: translate(50%,-50%);
 }
+
+@media screen and (max-width: 750px) {
+    .w-l{
+        background-image: none;
+    }
+
+}
