@@ -1,0 +1,306 @@
+/* 导航 */
+@font-face {
+    font-family: 'pinghei';
+    src: url('../font/pinghei.eot');
+    src:
+    url('../font/glyphicons-halflings-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /*使用选择器指定字体*/
+  a,p,h2,h3{
+  font-family: 'pinghei';
+  }
+
+/* 设置导航栏高度用里面的元素撑起来 */
+.navbar-nav li {
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 导航栏文字居中显示 */
+.self-nav {
+    margin-left: 20% !important;
+    width: 80%;
+}
+
+.self-nav ul {
+    width: 100%;
+    display: flex;
+}
+
+.self-nav ul li {
+    flex: 1;
+}
+
+/* 其它设置 */
+
+.self-nav ul li a {
+    font-size: 16px;
+    color: black !important;
+}
+
+.logo img {
+    padding-top: 7px;
+}
+
+.navbar {
+    background-color: #e3e3e3;
+    margin-bottom: 0px;
+    width: 100%;
+    border: 0px;
+}
+
+/* 还原设置 */
+
+@media screen and (max-width: 750px) {
+    .navbar-nav li {
+        height: 33px;
+        display: block;
+    }
+
+    .self-nav {
+        margin-left: 0px !important;
+        width: auto;
+    }
+
+    .self-nav ul {
+        width: auto;
+        display: block;
+    }
+
+}
+
+/* 主图案设置 */
+
+.b-r {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 200px;
+    float: left;
+}
+
+/* .l {
+    background-color: #1b1b1b;
+    float: left;
+}
+
+.r {
+    background-color: #ff0000;
+    float: left;
+} */
+
+
+/* 定义解释 */
+
+.w-g {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #d9d9d9;
+    width: 100%;
+    min-width: 200px;
+}
+
+/* 标题 */
+p {
+    text-indent: 2em;
+    line-height: 25px;
+    color: #000000;
+}
+
+h2 {
+    width: 20%;
+    min-width: 200px;
+    text-align: center;
+    color: white;
+    background-color: #ff0000;
+    font-size: 36px;
+    padding: 10px 5px;
+    margin-bottom: 25px;
+    font-size: 900;
+    position: relative;
+    z-index: 10;
+}
+
+h2::before {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 60px;
+    border: red solid 2px;
+    z-index: 2;
+}
+
+h3 {
+    color: #000000;
+    font-size: 20px;
+    font-size: 700;
+}
+
+.if {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 拨云见日 */
+
+.w-w {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    min-width: 200px;
+}
+
+/* 蒙版效果 */
+
+#panel {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: none;
+    z-index: 1000000000000;
+}
+
+#show {
+    width: 70%;
+    height: 90%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000000000000;
+    display: none;
+    background-image: url(../img/sm.jpg);
+    background-size: 100% 100%;
+}
+
+/* #show div{
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y:auto;
+} */
+.ov{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.ov div{
+    width: 110%;
+    height: 100%;
+    overflow-y:auto;
+}
+.ov div p{
+    width: 90%;
+}
+.w-l{
+    background-image: url(../img/b.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    width: 100%;
+    min-width: 200px;
+    /* height: 330px; */
+}
+
+/* 旋转木马 */
+.index{
+    height: 350px;
+}
+
+header {
+    width: 100%;
+    background-size: 100% 100%;
+    height: 350px;
+}
+.swiper-wrapper{
+    width: 100%;
+    height: 300px;
+}
+header .swiper-container {
+    width: 95%;
+    padding-top: 0.5rem;
+    height: 350px;
+}
+
+header .swiper-slide {
+    background-position: center;
+    background-size: 130% 120%;
+    width: 60%;
+    height: 350px;
+}
+.swiper-slide p{
+    text-align: center;
+    padding-top: 20px;
+}
+header .swiper-slide iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+header .swiper-button-next,
+.swiper-button-prev {
+    top: 5rem;
+    width: 10%;
+    height: 7rem;
+}
+
+header .swiper-button-next {
+    width: 20%;
+    height: 300px;
+    background: url("../img/right.png") no-repeat 100% 2.5rem;
+}
+
+header .swiper-button-prev {
+    width: 20%;
+    height: 300px;
+    background: url("../img/left.png") no-repeat 0 2.5rem;
+}
+
+.x{
+    padding-top: 80px;
+}
+
+/* 版权 */
+
+.w-dg{
+    background-color: #a3a2a2;
+    width: 100%;
+    min-width: 200px;
+}
+
+.flex{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex p{
+    margin: 0px;
+} 
